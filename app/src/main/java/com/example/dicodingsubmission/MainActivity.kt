@@ -5,11 +5,10 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myrecyclerview.Adapter
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var rvCampuss: RecyclerView
-    private var list: ArrayList<Campuss> = arrayListOf()
+    private lateinit var rvCampus: RecyclerView
+    private var list: ArrayList<Campus> = arrayListOf()
     private var title: String = "Daftar Kampus"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setActionBarTitle(title)
 
-        rvCampuss = findViewById(R.id.rv_campuss)
-        rvCampuss.setHasFixedSize(true)
+        rvCampus = findViewById(R.id.rv_campuss)
+        rvCampus.setHasFixedSize(true)
 
         list.addAll(Data.listData)
         showRecyclerCardView()
@@ -31,8 +30,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showRecyclerCardView() {
-        rvCampuss.layoutManager = LinearLayoutManager(this)
+        rvCampus.layoutManager = LinearLayoutManager(this)
         val cardViewAdapter = Adapter(list)
-        rvCampuss.adapter = cardViewAdapter
+        rvCampus.adapter = cardViewAdapter
     }
 }

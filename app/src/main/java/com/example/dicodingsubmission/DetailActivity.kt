@@ -25,13 +25,8 @@ class DetailActivity : AppCompatActivity() {
         val detail = intent.getStringExtra(EXTRA_DETAIL)
         val logo = intent.getIntExtra(EXTRA_LOGO, 10)
 
-        val text_name = name
-        tvName.text = text_name
-
-        val text_detail = detail
-        tvDetail.text = text_detail
-
-        val img_photo = logo
-        tvLogo.setImageResource(img_photo)
+        tvName.text = name
+        tvDetail.text = detail
+        tvLogo.setImageResource(logo)
     }
 }
