@@ -10,4 +10,6 @@
     <string name="fakultas">Fakultas</string>
     <string name="alamat">Alamat</string>
     <string name="alamat_kampus">Alamat kampus</string>
+    <string name="list">Daftar Kampus</string>
+    <string name="about">About Me</string>
 </resources>

@@ -1,6 +1,9 @@
 package com.example.dicodingsubmission
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.LinearLayout
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -33,5 +36,34 @@ class MainActivity : AppCompatActivity() {
         rvCampus.layoutManager = LinearLayoutManager(this)
         val cardViewAdapter = Adapter(list)
         rvCampus.adapter = cardViewAdapter
+    }
+
+    private fun showAbout() {
+        
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        setMode(item.itemId)
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun setMode(selectedMode: Int) {
+        when (selectedMode) {
+            R.id.action_list -> {
+                title = "Daftar Kampus"
+                showRecyclerCardView()
+            }
+
+            R.id.action_about -> {
+                title = "About Me"
+                showAbout()
+            }
+        }
+        setActionBarTitle(title)
     }
 }
