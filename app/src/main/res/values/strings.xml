@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Info Kampus</string>
+    <string name="detail">Detail</string>
+    <string name="campuss_name">Nama Kampus</string>
+    <string name="favorite">Favorite</string>
+    <string name="more">Show More</string>
+    <string name="nama_kampus">Nama kampus</string>
+    <string name="detail_kampus">Detail kampus</string>
+</resources>
