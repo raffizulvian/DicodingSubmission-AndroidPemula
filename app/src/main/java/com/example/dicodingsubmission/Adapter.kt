@@ -17,12 +17,11 @@ class Adapter(private val listCampuses: ArrayList<Campus>) : RecyclerView.Adapte
         var imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
         var tvName: TextView = itemView.findViewById(R.id.tv_item_name)
         var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)
-        var btnFavorite: Button = itemView.findViewById(R.id.btn_set_favorite)
-        var btnMore: Button = itemView.findViewById(R.id.btn_set_more)
+        var item: RelativeLayout = itemView.findViewById(R.id.item_list)
         var context: Context = itemView.context
 
         init {
-            btnMore.setOnClickListener {
+            item.setOnClickListener {
                 val intent = Intent(context, DetailActivity::class.java)
                 val position = adapterPosition
 
@@ -55,7 +54,6 @@ class Adapter(private val listCampuses: ArrayList<Campus>) : RecyclerView.Adapte
         holder.tvName.text = campuss.name
         holder.tvDetail.text = campuss.detail
 
-        holder.btnFavorite.setOnClickListener { Toast.makeText(holder.itemView.context, "Favorite " + listCampuses[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()}
         holder.itemView.setOnClickListener { Toast.makeText(holder.itemView.context, listCampuses[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()}
     }
 }
