@@ -1,17 +1,16 @@
 package com.example.dicodingsubmission
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
-import com.bumptech.glide.Glide
+import androidx.appcompat.app.AppCompatActivity
 
 class DetailActivity : AppCompatActivity() {
 
     companion object {
-        const val EXTRA_POSITION = "extra_position"
         const val EXTRA_NAME = "extra_name"
         const val EXTRA_DETAIL = "extra_detail"
+        const val EXTRA_LOGO = "extra_logo"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,14 +21,17 @@ class DetailActivity : AppCompatActivity() {
         val tvDetail: TextView = findViewById(R.id.tv_detail)
         val tvLogo: ImageView = findViewById(R.id.tv_logo)
 
-        val position = intent.getIntExtra(EXTRA_POSITION, 10)
         val name = intent.getStringExtra(EXTRA_NAME)
         val detail = intent.getStringExtra(EXTRA_DETAIL)
+        val logo = intent.getIntExtra(EXTRA_LOGO, 10)
 
         val text_name = name
         tvName.text = text_name
 
         val text_detail = detail
         tvDetail.text = text_detail
+
+        val img_photo = logo
+        tvLogo.setImageResource(img_photo)
     }
 }

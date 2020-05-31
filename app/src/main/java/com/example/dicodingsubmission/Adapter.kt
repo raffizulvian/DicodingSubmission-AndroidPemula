@@ -41,9 +41,9 @@ class Adapter(private val listCampuss: ArrayList<Campuss>) : RecyclerView.Adapte
                         8 -> position = 8
                         9 -> position = 9
                     }
-                    intent.putExtra(DetailActivity.EXTRA_POSITION, position)
                     intent.putExtra(DetailActivity.EXTRA_NAME, listCampuss[position].name)
                     intent.putExtra(DetailActivity.EXTRA_DETAIL, listCampuss[position].detail)
+                    intent.putExtra(DetailActivity.EXTRA_LOGO, listCampuss[position].logo)
                     context.startActivity(intent)
                 }
             })
