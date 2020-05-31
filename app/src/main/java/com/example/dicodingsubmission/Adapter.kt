@@ -56,6 +56,6 @@ class Adapter(private val listCampuses: ArrayList<Campus>) : RecyclerView.Adapte
         holder.tvDetail.text = campuss.detail
 
         holder.btnFavorite.setOnClickListener { Toast.makeText(holder.itemView.context, "Favorite " + listCampuses[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()}
-        holder.itemView.setOnClickListener { Toast.makeText(holder.itemView.context, "Kamu memilih " + listCampuses[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()}
+        holder.itemView.setOnClickListener { Toast.makeText(holder.itemView.context, listCampuses[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()}
     }
 }

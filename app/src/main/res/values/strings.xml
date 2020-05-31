@@ -6,4 +6,8 @@
     <string name="more">Show More</string>
     <string name="nama_kampus">Nama kampus</string>
     <string name="detail_kampus">Detail kampus</string>
+    <string name="daftar_fakultas">Daftar fakultas</string>
+    <string name="fakultas">Fakultas</string>
+    <string name="alamat">Alamat</string>
+    <string name="alamat_kampus">Alamat kampus</string>
 </resources>
