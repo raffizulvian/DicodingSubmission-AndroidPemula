@@ -1,9 +1,10 @@
 package com.example.dicodingsubmission
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -38,10 +39,6 @@ class MainActivity : AppCompatActivity() {
         rvCampus.adapter = cardViewAdapter
     }
 
-    private fun showAbout() {
-        
-    }
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
@@ -55,15 +52,13 @@ class MainActivity : AppCompatActivity() {
     private fun setMode(selectedMode: Int) {
         when (selectedMode) {
             R.id.action_list -> {
-                title = "Daftar Kampus"
-                showRecyclerCardView()
+                Toast.makeText(this, "Anda sudah berada di halaman ini", Toast.LENGTH_SHORT).show()
             }
 
             R.id.action_about -> {
-                title = "About Me"
-                showAbout()
+                val intent = Intent(this@MainActivity, AboutActivity::class.java)
+                startActivity(intent)
             }
         }
-        setActionBarTitle(title)
     }
 }
