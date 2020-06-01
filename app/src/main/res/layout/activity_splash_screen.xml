@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_centerVertical="true"
-        android:src="@drawable/toga" />
+        android:src="@drawable/toga"
+        android:contentDescription="@string/app_name_splash" />
 
     <TextView
         android:layout_width="match_parent"

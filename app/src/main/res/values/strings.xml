@@ -11,9 +11,8 @@
     <string name="list">Daftar Kampus</string>
     <string name="about">About Me</string>
     <string name="dev_name">Raffi Zulvian Muzhaffar</string>
-    <string name="email">EMAIL</string>
     <string name="dev_email">raffi16zulvian01muzhaffar@gmail.com</string>
-    <string name="linkedin">LINKEDIN</string>
     <string name="dev_linkedin">linkedin.com/in/raffizulvian</string>
+    <string name="dev_github">github.com/raffizulvian</string>
     <string name="app_name_splash">INFO KAMPUS</string>
 </resources>
