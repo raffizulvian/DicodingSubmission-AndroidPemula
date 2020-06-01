@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Info Kampus</string>
     <string name="detail">Detail</string>
-    <string name="campuss_name">Nama Kampus</string>
+    <string name="campus_name">Nama Kampus</string>
     <string name="nama_kampus">Nama kampus</string>
     <string name="detail_kampus">Detail kampus</string>
-    <string name="daftar_fakultas">Daftar fakultas</string>
-    <string name="fakultas">Fakultas</string>
+    <string name="daya_tampung">Daya Tampung</string>
+    <string name="daya_tampung_val">000</string>
     <string name="alamat">Alamat</string>
-    <string name="alamat_kampus">Alamat kampus</string>
+    <string name="alamat_val">Alamat kampus</string>
     <string name="list">Daftar Kampus</string>
     <string name="about">About Me</string>
     <string name="dev_name">Raffi Zulvian Muzhaffar</string>
@@ -15,4 +15,5 @@
     <string name="dev_email">raffi16zulvian01muzhaffar@gmail.com</string>
     <string name="linkedin">LINKEDIN</string>
     <string name="dev_linkedin">linkedin.com/in/raffizulvian</string>
+    <string name="app_name_splash">INFO KAMPUS</string>
 </resources>

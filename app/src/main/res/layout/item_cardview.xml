@@ -25,7 +25,7 @@
             android:layout_centerVertical="true"
             android:scaleType="fitCenter"
             tools:src="@color/colorAccent"
-            android:contentDescription="@string/detail" />
+            android:contentDescription="@string/detail"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -38,7 +38,7 @@
             android:layout_toEndOf="@id/img_item_photo"
             android:textSize="16sp"
             android:textStyle="bold"
-            tools:text="@string/campuss_name" />
+            tools:text="@string/campus_name" />
 
         <TextView
             android:layout_width="match_parent"

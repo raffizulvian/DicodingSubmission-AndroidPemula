@@ -22,7 +22,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/not_found"
-                android:contentDescription="@string/detail" />
+                android:contentDescription="@string/detail"/>
 
             <TextView
                 android:id="@+id/tv_name"
@@ -75,7 +75,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/fakultas"
+                        android:text="@string/daya_tampung_val"
                         android:textSize="14sp"
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="16dp"/>
@@ -83,7 +83,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/daftar_fakultas"
+                        android:text="@string/daya_tampung"
                         android:textSize="14sp"
                         android:layout_weight="1" />
 
@@ -105,7 +105,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/alamat_kampus"
+                    android:text="@string/alamat_val"
                     android:textSize="14sp"
                     android:layout_weight="1" />
 
