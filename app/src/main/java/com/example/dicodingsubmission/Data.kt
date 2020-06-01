@@ -36,6 +36,19 @@ object Data {
         R.drawable.ub,
         R.drawable.undip)
 
+    private val campusAddress = arrayOf(
+        "Jl. Ganesha No. 10, Kota Bandung",
+        "Jl. Margonda Raya, Kota Depok",
+        "Bulaksumur, Caturtunggal, Kabupaten Sleman",
+        "Jl. Airlangga No.4 - 6, Airlangga, Kota Surabaya",
+        "Jl. Teknik Kimia, Keputih, Kota Surabaya",
+        "Jl. Raya Bandung Sumedang KM.21, Kabupaten Sumedang",
+        "Jl. Dr. Setiabudi No.229, Kota Bandung",
+        "Jl. Raya Dramaga, Kota Bogor",
+        "Jl. Veteran, Ketawanggede, Kota Malang",
+        "Jl. Prof. Sudarto No.13, Kota Semarang"
+    )
+
     val listData: ArrayList<Campus>
         get() {
             val list = arrayListOf<Campus>()
@@ -44,6 +57,7 @@ object Data {
                 campus.name = campusNames[position]
                 campus.detail = campusDetails[position]
                 campus.logo = campusLogos[position]
+                campus.address = campusAddress[position]
                 list.add(campus)
             }
             return list

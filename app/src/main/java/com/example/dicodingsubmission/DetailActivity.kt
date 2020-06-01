@@ -11,6 +11,7 @@ class DetailActivity : AppCompatActivity() {
         const val EXTRA_NAME = "extra_name"
         const val EXTRA_DETAIL = "extra_detail"
         const val EXTRA_LOGO = "extra_logo"
+        const val EXTRA_ADDRESS = "extra_address"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,13 +21,16 @@ class DetailActivity : AppCompatActivity() {
         val tvName: TextView = findViewById(R.id.tv_name)
         val tvDetail: TextView = findViewById(R.id.tv_detail)
         val tvLogo: ImageView = findViewById(R.id.tv_logo)
+        val tvAdress: TextView = findViewById(R.id.tv_adress)
 
         val name = intent.getStringExtra(EXTRA_NAME)
         val detail = intent.getStringExtra(EXTRA_DETAIL)
         val logo = intent.getIntExtra(EXTRA_LOGO, 10)
+        val address = intent.getStringExtra(EXTRA_ADDRESS)
 
         tvName.text = name
         tvDetail.text = detail
         tvLogo.setImageResource(logo)
+        tvAdress.text = address
     }
 }

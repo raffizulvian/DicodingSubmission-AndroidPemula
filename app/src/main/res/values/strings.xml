@@ -4,8 +4,8 @@
     <string name="campus_name">Nama Kampus</string>
     <string name="nama_kampus">Nama kampus</string>
     <string name="detail_kampus">Detail kampus</string>
-    <string name="daya_tampung">Daya Tampung</string>
-    <string name="daya_tampung_val">000</string>
+    <string name="status_val">PTN</string>
+    <string name="status">Status</string>
     <string name="alamat">Alamat</string>
     <string name="alamat_val">Alamat kampus</string>
     <string name="list">Daftar Kampus</string>

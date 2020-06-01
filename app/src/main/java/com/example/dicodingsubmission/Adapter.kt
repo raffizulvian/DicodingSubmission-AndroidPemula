@@ -17,6 +17,7 @@ class Adapter(private val listCampuses: ArrayList<Campus>) : RecyclerView.Adapte
         var imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
         var tvName: TextView = itemView.findViewById(R.id.tv_item_name)
         var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)
+
         private var item: RelativeLayout = itemView.findViewById(R.id.item_list)
         private var context: Context = itemView.context
 
@@ -28,6 +29,7 @@ class Adapter(private val listCampuses: ArrayList<Campus>) : RecyclerView.Adapte
                 intent.putExtra(DetailActivity.EXTRA_NAME, listCampuses[position].name)
                 intent.putExtra(DetailActivity.EXTRA_DETAIL, listCampuses[position].detail)
                 intent.putExtra(DetailActivity.EXTRA_LOGO, listCampuses[position].logo)
+                intent.putExtra(DetailActivity.EXTRA_ADDRESS, listCampuses[position].address)
 
                 context.startActivity(intent)
             }
