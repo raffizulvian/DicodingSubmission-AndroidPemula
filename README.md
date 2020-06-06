@@ -1,5 +1,5 @@
 # DicodingSubmission-AndroidPemula
-This repo contains my project to complete the Dicoding submission task for "Kelas Membuat Aplikasi Android Pemula". This android app will show some information about several of Indonesia`s universities.
+This repo contains my project to complete the Dicoding Academy submission task for "Kelas Membuat Aplikasi Android Pemula". This android app will show some information about several of Indonesia`s universities.
 
 In this app, I implement my knowledge about RecyclerView, activity moving, creating a menu, and transferring data through activity.
 
